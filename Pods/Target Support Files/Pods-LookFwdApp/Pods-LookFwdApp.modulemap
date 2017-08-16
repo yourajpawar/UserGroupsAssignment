@@ -1,0 +1,6 @@
+framework module Pods_LookFwdApp {
+  umbrella header "Pods-LookFwdApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

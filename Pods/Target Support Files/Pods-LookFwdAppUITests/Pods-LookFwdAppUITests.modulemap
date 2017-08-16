@@ -1,0 +1,6 @@
+framework module Pods_LookFwdAppUITests {
+  umbrella header "Pods-LookFwdAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
