@@ -11,18 +11,34 @@ import Foundation
 
 struct Group {
     
-    let userArray:[User]
-    let groupName:String
+    var userArray:[User] = []
+    var groupName:String = ""
     var groupId:Int = 0
     
-    init(userArray:[User], groupName:String) {
+    init?(userArray:[User], groupName:String) {
         
+        if userArray.count > 0 {
+            
         self.userArray = userArray
         self.groupName = groupName
         
         //Get
-        let count = UserDefaults.standard.integer(forKey: "groupsCount")
+        let count = UserDefaults.standard.integer(forKey: "groupId")
         
         self.groupId = count + 1
+            
+        }
+    }
+    
+    
+    init?(userArray:[User], groupName:String, groupID:Int) {
+        
+        if userArray.count > 0 {
+            
+            self.userArray = userArray
+            self.groupName = groupName
+            self.groupId = groupID
+            
+        }
     }
 }

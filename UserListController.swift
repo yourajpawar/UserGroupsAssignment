@@ -30,6 +30,8 @@ class UserListController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.navigationController?.navigationBar.tintColor = UIColor.orange
         
+        self.tabBarController?.tabBar.tintColor = UIColor.orange
+        
         networkManager = NetworkManager()
         
         self.activityView.isHidden = false
@@ -88,26 +90,6 @@ class UserListController: UIViewController, UITableViewDelegate, UITableViewData
         
         return usersArray.count   // returns the count of collection
     }
-    
-    //    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-    //
-    //        if let cell = cell as? UserCell {
-    //
-    //            let user = usersArray[indexPath.row]
-    //
-    //            if user.isSelected {
-    //
-    //                cell.backgroundColor = UIColor.blue
-    //
-    //            }
-    //            else {
-    //
-    //                cell.backgroundColor = UIColor.white
-    //            }
-    //
-    //        }
-    //    }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //when user taps on the particular cell.
         
