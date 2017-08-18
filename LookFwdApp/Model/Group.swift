@@ -11,7 +11,18 @@ import Foundation
 
 struct Group {
     
-    let useridArray:[User]
+    let userArray:[User]
     let groupName:String
-    let groupId:Int
+    var groupId:Int = 0
+    
+    init(userArray:[User], groupName:String) {
+        
+        self.userArray = userArray
+        self.groupName = groupName
+        
+        //Get
+        let count = UserDefaults.standard.integer(forKey: "groupsCount")
+        
+        self.groupId = count + 1
+    }
 }

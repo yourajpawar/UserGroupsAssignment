@@ -169,6 +169,39 @@ class UserListController: UIViewController, UITableViewDelegate, UITableViewData
         
         //SHOW UI ALERT DIALOG
         print("Create Group clicked")
+        
+        let count = AppManager.sharedInstance.selectedUsers(usersArray: usersArray)?.count
+        
+        if count! > 0 {
+            
+            presentAlert()
+        }
+        
+        
+//       _ = AppManager.sharedInstance.createGroup(usersArray: usersArray)
+    }
+    
+    func presentAlert() {
+        let alertController = UIAlertController(title: "Group Name?", message: "Please enter a group name:", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
+            if let field = alertController.textFields?[0] {
+                
+               _ = AppManager.sharedInstance.createGroup(usersArray: self.usersArray,groupName: field.text!)
+                
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Group Name"
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }

@@ -52,6 +52,12 @@
 		D0334F111F46288F00FEC4C7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F101F46288F00FEC4C7 /* Utilities.swift */; };
 		D0334F121F46288F00FEC4C7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F101F46288F00FEC4C7 /* Utilities.swift */; };
 		D0334F131F46288F00FEC4C7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F101F46288F00FEC4C7 /* Utilities.swift */; };
+		D0334F1A1F465D1E00FEC4C7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F191F465D1E00FEC4C7 /* AppManager.swift */; };
+		D0334F1B1F465D1E00FEC4C7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F191F465D1E00FEC4C7 /* AppManager.swift */; };
+		D0334F1C1F465D1E00FEC4C7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F191F465D1E00FEC4C7 /* AppManager.swift */; };
+		D0334F1E1F46602E00FEC4C7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F1D1F46602E00FEC4C7 /* GroupCell.swift */; };
+		D0334F1F1F46602E00FEC4C7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F1D1F46602E00FEC4C7 /* GroupCell.swift */; };
+		D0334F201F46602E00FEC4C7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0334F1D1F46602E00FEC4C7 /* GroupCell.swift */; };
 		F95A18D11F4383190012B389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A18D01F4383190012B389 /* AppDelegate.swift */; };
 		F95A18D31F4383190012B389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A18D21F4383190012B389 /* ViewController.swift */; };
 		F95A18D61F4383190012B389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95A18D41F4383190012B389 /* Main.storyboard */; };
@@ -108,6 +114,8 @@
 		D0334F031F46287600FEC4C7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0334F0B1F46288600FEC4C7 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		D0334F101F46288F00FEC4C7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D0334F191F465D1E00FEC4C7 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		D0334F1D1F46602E00FEC4C7 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		F95A18CD1F4383190012B389 /* LookFwdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookFwdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95A18D01F4383190012B389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = LookFwdApp/AppDelegate.swift; sourceTree = "<group>"; };
 		F95A18D21F4383190012B389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = LookFwdApp/ViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +233,7 @@
 		D0334F0A1F46288600FEC4C7 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D0334F1D1F46602E00FEC4C7 /* GroupCell.swift */,
 				D0334F0B1F46288600FEC4C7 /* UserCell.swift */,
 			);
 			path = TableView;
@@ -236,6 +245,14 @@
 				D0334F101F46288F00FEC4C7 /* Utilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0334F181F464DBC00FEC4C7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D0334F191F465D1E00FEC4C7 /* AppManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F95A18C41F4383190012B389 = {
@@ -263,6 +280,7 @@
 		F95A18CF1F4383190012B389 /* LookFwdApp */ = {
 			isa = PBXGroup;
 			children = (
+				D0334F181F464DBC00FEC4C7 /* Shared */,
 				D0334F0F1F46288F00FEC4C7 /* Utilities */,
 				D0334F0A1F46288600FEC4C7 /* TableView */,
 				D0334F011F46287600FEC4C7 /* Network */,
@@ -615,6 +633,7 @@
 			files = (
 				D0334F071F46287600FEC4C7 /* NetworkManager.swift in Sources */,
 				F95A18D31F4383190012B389 /* ViewController.swift in Sources */,
+				D0334F1E1F46602E00FEC4C7 /* GroupCell.swift in Sources */,
 				D0334EEB1F4627F200FEC4C7 /* ExtensionArray.swift in Sources */,
 				D0334EEE1F4627F200FEC4C7 /* ExtensionDecodable.swift in Sources */,
 				D0334EFE1F46286C00FEC4C7 /* User.swift in Sources */,
@@ -628,6 +647,7 @@
 				F95A190C1F43868F0012B389 /* GroupListController.swift in Sources */,
 				D0334EFA1F4627F200FEC4C7 /* Operators.swift in Sources */,
 				F95A190A1F4386780012B389 /* UserListController.swift in Sources */,
+				D0334F1A1F465D1E00FEC4C7 /* AppManager.swift in Sources */,
 				F95A18D11F4383190012B389 /* AppDelegate.swift in Sources */,
 				D0334F111F46288F00FEC4C7 /* Utilities.swift in Sources */,
 			);
@@ -637,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0334F1F1F46602E00FEC4C7 /* GroupCell.swift in Sources */,
 				D0334EEF1F4627F200FEC4C7 /* ExtensionDecodable.swift in Sources */,
 				D0334EFF1F46286C00FEC4C7 /* User.swift in Sources */,
 				D0334EFB1F4627F200FEC4C7 /* Operators.swift in Sources */,
@@ -644,6 +665,7 @@
 				D0334F081F46287600FEC4C7 /* NetworkManager.swift in Sources */,
 				D0334ED01F44BD4200FEC4C7 /* Group.swift in Sources */,
 				D0334F0D1F46288600FEC4C7 /* UserCell.swift in Sources */,
+				D0334F1B1F465D1E00FEC4C7 /* AppManager.swift in Sources */,
 				D0334EF51F4627F200FEC4C7 /* Gloss.swift in Sources */,
 				D0334EE91F4627F200FEC4C7 /* Encoder.swift in Sources */,
 				D0334EE61F4627F200FEC4C7 /* Decoder.swift in Sources */,
@@ -657,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0334F201F46602E00FEC4C7 /* GroupCell.swift in Sources */,
 				D0334EF01F4627F200FEC4C7 /* ExtensionDecodable.swift in Sources */,
 				D0334F001F46286C00FEC4C7 /* User.swift in Sources */,
 				D0334EFC1F4627F200FEC4C7 /* Operators.swift in Sources */,
@@ -664,6 +687,7 @@
 				D0334F091F46287600FEC4C7 /* NetworkManager.swift in Sources */,
 				D0334ED11F44BD4200FEC4C7 /* Group.swift in Sources */,
 				D0334F0E1F46288600FEC4C7 /* UserCell.swift in Sources */,
+				D0334F1C1F465D1E00FEC4C7 /* AppManager.swift in Sources */,
 				D0334EF61F4627F200FEC4C7 /* Gloss.swift in Sources */,
 				D0334EEA1F4627F200FEC4C7 /* Encoder.swift in Sources */,
 				D0334EE71F4627F200FEC4C7 /* Decoder.swift in Sources */,
